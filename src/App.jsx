@@ -4,6 +4,7 @@ import Logo from "./components/Logo";
 import PackingList from "./components/PackingList";
 import Stats from "./components/Stats";
 import Task from "./components/Task";
+import Accordion from "./components/Accordion";
 
 function App() {
   const [items, setItems] = useState([]);
@@ -31,16 +32,17 @@ function App() {
 
   return (
     <div className="app">
-      <Logo />
+      {/* <Logo />
       <Form onAddItem={handleAddItem} />
       <PackingList
         items={items}
         onDeleteItem={handleDeleteItem}
         onToggleItem={handleToggleItem}
         onClearList={handleClearList}
-      />
-      <Stats items={items} />
+      /> */}
+      {/* <Stats items={items} /> */}
       {/* <Task /> */}
+      <Accordion />
     </div>
   );
 }

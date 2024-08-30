@@ -56,4 +56,33 @@ export const initialItems = [
       answer: "In-memory representation of the real DOM."
     }
   ];
+
+  export const data = [
+    {
+      id: 1,
+      title: "Introduction",
+      text: "This is the introduction section, where you can find the basic overview of the content.",
+    },
+    {
+      id: 2,
+      title: "Chapter 1: Getting Started",
+      text: "Chapter 1 covers the initial setup and fundamental concepts that you need to get started.",
+    },
+    {
+      id: 3,
+      title: "Chapter 2: Advanced Techniques",
+      text: "In Chapter 2, you'll explore more advanced techniques and best practices.",
+    },
+    {
+      id: 4,
+      title: "Conclusion",
+      text: "The conclusion summarizes the key points and provides final thoughts.",
+    },
+    {
+      id: 5,
+      title: "Appendix",
+      text: "The appendix contains additional resources and references for further study.",
+    },
+  ];
+  
   

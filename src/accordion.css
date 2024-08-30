@@ -1,0 +1,65 @@
+/* General Container Styles */
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+/* Parent Container for Title, Icon, and Description */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.parent.active {
+  border-top: 5px solid rgb(0, 78, 0);
+}
+
+.parent:hover {
+  background-color: #e9e9e9;
+}
+
+/* Title Styling */
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Icon Styling */
+.icon {
+  font-size: 20px;
+  color: #666;
+  align-self: flex-end;
+  transition: transform 0.3s ease;
+}
+
+/* Rotating the icon when accordion is open */
+.parent.open .icon {
+  transform: rotate(45deg);
+}
+
+/* Description Styling */
+.description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+/* Show description when accordion is open */
+.parent.open .description {
+  display: block;
+}
