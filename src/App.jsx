@@ -5,6 +5,7 @@ import PackingList from "./components/PackingList";
 import Stats from "./components/Stats";
 import Task from "./components/Task";
 import Accordion from "./components/Accordion";
+import TipCalculator from "./components/TipCalculator";
 
 function App() {
   const [items, setItems] = useState([]);
@@ -43,6 +44,7 @@ function App() {
       {/* <Stats items={items} /> */}
       {/* <Task /> */}
       <Accordion />
+      <TipCalculator />
     </div>
   );
 }

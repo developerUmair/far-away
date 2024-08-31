@@ -18,7 +18,7 @@ const Accordion = () => {
             onToggleItem={handleToggleItem}
             item={item}
             activeId={activeId}
-          />
+          >{item.text}</AccordionItem>
         ))}
       </div>
     </>

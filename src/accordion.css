@@ -23,7 +23,7 @@
 }
 
 .parent.active {
-  border-top: 5px solid rgb(0, 78, 0);
+  border-top: 5px solid #7950f2
 }
 
 .parent:hover {

@@ -1,6 +1,6 @@
-import React from "react";
+import React, { Children } from "react";
 
-const AccordionItem = ({ item, onToggleItem, activeId }) => {
+const AccordionItem = ({ item, onToggleItem, activeId, children }) => {
   const isOpen = activeId === item.id;
   return (
     <div
@@ -11,7 +11,7 @@ const AccordionItem = ({ item, onToggleItem, activeId }) => {
         <div className="title">{item.title}</div>
         <div className={`icon `}>{isOpen ? "-" : "+"}</div>
       </div>
-      {isOpen && <div className="description">{item.text}</div>}
+      {isOpen && <div className="description">{children}</div>}
     </div>
   );
 };
